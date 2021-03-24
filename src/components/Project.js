@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { projectsData } from "../data/projectsData";
+import { motion } from "framer-motion";
 
 const Project = (props) => {
   const [currentProject] = useState(projectsData);
@@ -11,8 +12,49 @@ const Project = (props) => {
   let top = Math.floor(Math.random() * 200 + 150) + "px";
   let transform = "scale(" + (Math.random() + 0.7) + ")";
 
+  const variants = {
+    initial: {
+      opacity: 0,
+      transition: { duration: 0.5 },
+      x: 100,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+    },
+    exit: {
+      opacity: 0.4,
+      transition: { duration: 0.35 },
+      x: -800,
+    },
+  };
+
+  let plusMinus = Math.random() > 0.4 ? 1 : -1;
+
+  let imgX = Math.random() * 350 * plusMinus;
+  let imgY = Math.random() * 120 * plusMinus;
+
+  const imgAnime = {
+    initial: {
+      opacity: 0,
+      x: imgX,
+      y: imgY,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+    },
+  };
+
   return (
-    <div className="project-main">
+    <motion.div
+      className="project-main"
+      initial="initial"
+      animate="visible"
+      exit="exit"
+      variants={variants}
+    >
       <div className="project-content">
         <h1>{project.title}</h1>
         <p>{project.date}</p>
@@ -22,7 +64,13 @@ const Project = (props) => {
           })}
         </ul>
       </div>
-      <div className="img-content">
+      <motion.div
+        className="img-content"
+        initial="initial"
+        animate="visible"
+        variants={imgAnime}
+        transition={{ duration: 1.2 }}
+      >
         <div className="img-container hover">
           <span>
             <h3>{project.title}</h3>
@@ -40,12 +88,12 @@ const Project = (props) => {
             <span className="button">voir le site</span>
           </a>
         </div>
-      </div>
+      </motion.div>
       <span
         className="random-circle"
         style={{ left: left, top, transform }}
       ></span>
-    </div>
+    </motion.div>
   );
 };
 

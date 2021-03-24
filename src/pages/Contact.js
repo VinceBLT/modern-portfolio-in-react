@@ -5,12 +5,30 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import SocialNetwork from "../components/SocialNetwork";
 import ButtonsBottom from "../components/ButtonsBottom";
 import ContactForm from "../components/ContactForm";
+import { motion } from "framer-motion";
 
 const Contact = () => {
+  const variants = {
+    in: {
+      opacity: 1,
+      x: 0,
+    },
+    out: {
+      opacity: 0,
+      x: 300,
+    },
+  };
+
   return (
     <main>
       <Mouse />
-      <div className="contact">
+      <motion.div
+        className="contact"
+        exit="out"
+        animate="in"
+        initial="out"
+        variants={variants}
+      >
         <Navigation />
         <ContactForm />
         <div className="contact-infos">
@@ -62,7 +80,7 @@ const Contact = () => {
           </div>
         </div>
         <ButtonsBottom left={"/project-4"} />
-      </div>
+      </motion.div>
     </main>
   );
 };
