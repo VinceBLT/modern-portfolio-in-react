@@ -1,11 +1,13 @@
 import React from "react";
 import ButtonsBottom from "../components/ButtonsBottom";
+import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
 import Project from "../components/Project";
 
 export const Project1 = () => {
   return (
     <main>
+      <Mouse />
       <div className="project">
         <Navigation />
         <Project projectNumber={0} />
@@ -17,6 +19,7 @@ export const Project1 = () => {
 export const Project2 = () => {
   return (
     <main>
+      <Mouse />
       <div className="project">
         <Navigation />
         <Project projectNumber={1} />
@@ -28,6 +31,7 @@ export const Project2 = () => {
 export const Project3 = () => {
   return (
     <main>
+      <Mouse />
       <div className="project">
         <Navigation />
         <Project projectNumber={2} />
@@ -39,6 +43,7 @@ export const Project3 = () => {
 export const Project4 = () => {
   return (
     <main>
+      <Mouse />
       <div className="project">
         <Navigation />
         <Project projectNumber={3} />
