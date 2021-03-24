@@ -11,13 +11,13 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "Lyon Béton",
-    date: "Mars 2020",
-    languages: ["Symfony", "Vue"],
+    title: "Countries App",
+    date: "Février 2021",
+    languages: ["React", "Scss"],
     infos:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-1.jpg",
-    link: "http://www.google.com",
+    img: "./assets/img/P2-Countriesapp.png",
+    link: "https://practical-fermat-c3ee37.netlify.app/",
   },
   {
     id: 3,
