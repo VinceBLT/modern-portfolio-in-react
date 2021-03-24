@@ -38,10 +38,30 @@ const Home = () => {
         <SocialNetwork />
         <div className="home-main">
           <div className="main-content">
-            <h1>Vincent Bezault</h1>
-            <h2>
+            <motion.h1
+              drag
+              OnDragEnd
+              dragConstraints={{
+                left: -250,
+                right: 400,
+                top: -200,
+                bottom: 250,
+              }}
+            >
+              Vincent Bezault
+            </motion.h1>
+            <motion.h2
+              drag
+              OnDragEnd
+              dragConstraints={{
+                left: -250,
+                right: 400,
+                top: -200,
+                bottom: 250,
+              }}
+            >
               <DynamicText />
-            </h2>
+            </motion.h2>
           </div>
         </div>
         <ButtonsBottom right={"/project-1"} />
