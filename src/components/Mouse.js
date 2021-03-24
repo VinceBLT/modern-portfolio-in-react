@@ -8,6 +8,19 @@ const Mouse = () => {
       document.querySelector(".cursor").style.left = e.pageX + "px";
     };
     window.addEventListener("mousemove", handleCursor);
+
+    const handleHover = () => {
+      document.querySelector(".cursor").classList.add("hovered");
+    };
+
+    const handleLeave = () => {
+      document.querySelector(".cursor").classList.remove("hovered");
+    };
+
+    document.querySelectorAll(".hover").forEach((link) => {
+      link.addEventListener("mouseover", handleHover);
+      link.addEventListener("mouseleave", handleLeave);
+    });
   }, []);
 
   return (

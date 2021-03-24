@@ -8,9 +8,9 @@ const Navigation = () => {
         <NavLink to="/" exact className="hover" activeClassName="nav-active">
           <li>home</li>
         </NavLink>
-        <li className="nav-portfolio">
+        <li className="nav-portfolio hover">
           portfolio
-          <ul className="nav-projects">
+          <ul className="nav-projects hover">
             <NavLink to="/project-1" activeClassName="nav-active">
               <li>projet 1</li>
             </NavLink>
