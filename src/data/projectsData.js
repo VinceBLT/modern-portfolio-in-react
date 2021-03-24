@@ -21,12 +21,12 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: "Everpost",
-    date: "Avril 2020",
-    languages: ["Wordpress", "Php", "React"],
+    title: "Univers Soi",
+    date: "En cours",
+    languages: ["React", "Scss"],
     infos:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-3.jpg",
+    img: "./assets/img/P3-Universoi.png",
     link: "http://www.google.com",
   },
   {
