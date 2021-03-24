@@ -21,22 +21,22 @@ export const projectsData = [
   },
   {
     id: 3,
+    title: "Dice game",
+    date: "Novembre 2020",
+    languages: ["JavaScript"],
+    infos:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+    img: "./assets/img/P4-Dicegame.png",
+    link: "https://vinceblt.github.io/Little-game-in-JavaScript/",
+  },
+  {
+    id: 4,
     title: "Univers Soi",
     date: "En cours",
     languages: ["React", "Scss"],
     infos:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
     img: "./assets/img/P3-Universoi.png",
-    link: "http://www.google.com",
-  },
-  {
-    id: 4,
-    title: "Creative Dev",
-    date: "Juillet 2020",
-    languages: ["Vue", "Php"],
-    infos:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-4.jpg",
     link: "http://www.google.com",
   },
 ];
