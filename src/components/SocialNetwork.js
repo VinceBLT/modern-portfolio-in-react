@@ -9,6 +9,7 @@ const SocialNetwork = () => {
         let attrX = e.offsetX - 20;
         let attrY = e.offsetY - 13;
 
+        link.style.color = "black";
         link.style.transform = `translate(${attrX}px, ${attrY}px)`;
       });
       link.addEventListener("mouseleave", () => {
