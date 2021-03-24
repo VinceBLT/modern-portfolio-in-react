@@ -3,19 +3,21 @@ import { useEffect } from "react";
 
 const Mouse = () => {
   useEffect(() => {
+    const cursor = document.querySelector(".cursor");
+
     const handleCursor = (e) => {
-      document.querySelector(".cursor").style.top = e.pageY + "px";
-      document.querySelector(".cursor").style.left = e.pageX + "px";
+      cursor.style.top = e.pageY + "px";
+      cursor.style.left = e.pageX + "px";
     };
     window.addEventListener("mousemove", handleCursor);
 
     const handleHover = () => {
-      document.querySelector(".cursor").classList.add("hovered");
+      cursor.classList.add("hovered");
     };
 
     const handleLeave = () => {
-      document.querySelector(".cursor").style.transition = ".3s ease-out";
-      document.querySelector(".cursor").classList.remove("hovered");
+      cursor.style.transition = ".3s ease-out";
+      cursor.classList.remove("hovered");
     };
 
     document.querySelectorAll(".hover").forEach((link) => {
