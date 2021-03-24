@@ -1,13 +1,13 @@
 export const projectsData = [
   {
     id: 1,
-    title: "Casta",
-    date: "Janvier 2020",
-    languages: ["React", "Php", "Sass"],
+    title: "EK Design",
+    date: "Decembre 2020",
+    languages: ["JavaScript", "Php", "Bootstrap"],
     infos:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-2.jpg",
-    link: "http://www.google.com",
+    img: "./assets/img/P1-EKDesign.jpg",
+    link: "http://ekdesign.fr/",
   },
   {
     id: 2,
