@@ -67,7 +67,7 @@ const ContactForm = () => {
     let formMess = document.querySelector(".form-message");
 
     window.emailjs
-      .send("gmail", templateId, variables)
+      .send("default_service", templateId, variables)
       .then((res) => {
         formMess.innerHTML = "Message sent ! We will get back to you soon";
         formMess.style.background = "#00c1ec";
