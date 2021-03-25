@@ -19,6 +19,11 @@ const Contact = () => {
     },
   };
 
+  const transition = {
+    ease: [0.03, 0.87, 0.73, 0.9],
+    duration: 0.6,
+  };
+
   return (
     <main>
       <Mouse />
@@ -28,6 +33,7 @@ const Contact = () => {
         animate="in"
         initial="out"
         variants={variants}
+        transition={transition}
       >
         <Navigation />
         <ContactForm />
