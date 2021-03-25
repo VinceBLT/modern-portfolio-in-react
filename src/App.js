@@ -30,11 +30,11 @@ const App = () => {
         if (e.wheelDeltaY < 0) {
           setTimeout(() => {
             history.push(after);
-          }, 800);
+          }, 600);
         } else if (e.wheelDeltaY > 0) {
           setTimeout(() => {
             history.push(before);
-          }, 800);
+          }, 600);
         }
       };
 
@@ -43,7 +43,7 @@ const App = () => {
           if (e.wheelDeltaY < 0) {
             setTimeout(() => {
               history.push("project-1");
-            }, 800);
+            }, 600);
           }
           break;
         case url + "project-1": {

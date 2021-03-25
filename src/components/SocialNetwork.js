@@ -31,7 +31,7 @@ const SocialNetwork = () => {
           <i class="fab fa-github"></i>
         </a>
         <a
-          href="www.linkedin.com/in/🪐-vincent-bezault-732451205"
+          href="https://linkedin.com/in/🪐-vincent-bezault-732451205"
           target="_blank"
           rel="noopener noreferrer"
           className="hover"
